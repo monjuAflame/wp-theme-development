@@ -8,5 +8,12 @@
 </head>
 <body>
     <h1>Hello World</h1>
+
+    <?php
+        wp_nav_menu(array(
+            'theme_location' => 'main-menu'
+        ))
+    ?>
+
 </body>
 </html>
