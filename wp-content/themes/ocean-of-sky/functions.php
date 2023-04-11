@@ -25,4 +25,7 @@ function basic_theme_styles() {
     wp_enqueue_style('style', get_stylesheet_uri(),'','');
 }
 
+require_once('custom-menu-walker.php');
+
+
 ?>

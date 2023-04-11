@@ -17,6 +17,7 @@
 <?php 
     wp_nav_menu(array(
         'theme_location' => 'main-menu',
-        'menu_id' => 'page'
+        'menu_id' => 'page',
+        'walker' => new custom_walker()
     ));
 ?>
