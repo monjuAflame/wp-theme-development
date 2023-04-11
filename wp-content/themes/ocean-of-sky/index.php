@@ -14,7 +14,7 @@
   <div class="topNaviagationLink"><a href="#">Contact</a></div>
 </div>
 <div id="mainPicture">
-  <div class="picture">
+  <div class="picture" style="background-image: url('<?php header_image() ?>')">
     <div id="headerTitle">An Ocean of Sky</div>
     <div id="headerSubtext">Free CSS Website Template</div>
   </div>
