@@ -15,8 +15,8 @@
 </div>
 <div id="mainPicture">
   <div class="picture" style="background-image: url('<?php header_image() ?>')">
-    <div id="headerTitle">An Ocean of Sky</div>
-    <div id="headerSubtext">Free CSS Website Template</div>
+    <div id="headerTitle"><?php bloginfo('name') ?></div>
+    <div id="headerSubtext"><?php bloginfo('description') ?></div>
   </div>
 </div>
 <div class="contentBox">
