@@ -6,10 +6,17 @@
 <?php wp_head() ?>
 </head>
 <body <?php body_class()?>>
-<div id="page">
-  <div class="topNaviagationLink"><a href="#">Home</a></div>
-  <div class="topNaviagationLink"><a href="#">About</a></div>
-  <div class="topNaviagationLink"><a href="#">Portfolio</a></div>
-  <div class="topNaviagationLink"><a href="#">Services</a></div>
-  <div class="topNaviagationLink"><a href="#">Contact</a></div>
-</div>
+<!-- <ul id="page">
+  <li class="topNaviagationLink"><a href="#">Home</a></li>
+  <li class="topNaviagationLink"><a href="#">About</a></li>
+  <li class="topNaviagationLink"><a href="#">Portfolio</a></li>
+  <li class="topNaviagationLink"><a href="#">Services</a></li>
+  <li class="topNaviagationLink"><a href="#">Contact</a></li>
+</ul> -->
+
+<?php 
+    wp_nav_menu(array(
+        'theme_location' => 'main-menu',
+        'menu_id' => 'page'
+    ));
+?>

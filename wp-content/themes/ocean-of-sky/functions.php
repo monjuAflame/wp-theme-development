@@ -13,6 +13,10 @@ function basic_theme_function(){
         'default-image'=> get_template_directory_uri() . '/images/anoceanofsky.jpg'
     ));
 
+    load_theme_textdomain('basictheme', get_template_directory().'/languages');
+
+    register_nav_menu('main-menu', __('Main Menu', 'basictheme'));
+
 }
 
 add_action('wp_enqueue_scripts','basic_theme_styles');
@@ -20,7 +24,5 @@ add_action('wp_enqueue_scripts','basic_theme_styles');
 function basic_theme_styles() {
     wp_enqueue_style('style', get_stylesheet_uri(),'','');
 }
-
-
 
 ?>
