@@ -44,7 +44,9 @@ function new_title($title) {
 add_filter('the_title', 'new_title');
 
 // add filter custom hook
-
+add_filter('new_custom_hook', function(){
+	return ' custom add_filter hook';
+})
 
 
 
