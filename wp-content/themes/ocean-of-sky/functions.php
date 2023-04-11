@@ -28,4 +28,21 @@ function basic_theme_styles() {
 require_once('custom-menu-walker.php');
 
 
+
+
+function who_is_hook() {
+	echo 'i am function';
+}
+
+add_action('i_am_hook', 'who_is_hook');
+
+
+
+
+
+
+
+
+
+
 ?>
