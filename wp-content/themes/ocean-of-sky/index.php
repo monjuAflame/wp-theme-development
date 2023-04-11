@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html <?php language_attributes()?>>
 <head>
-<title>An Ocean of Sky</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <?php wp_head() ?>
