@@ -6,9 +6,9 @@
       <div class="contentTitle">
         <a href="<?php the_permalink() ?>"><?php the_title()?></a>
         <br>
-        SubTitle: <?php echo get_post_meta(get_the_ID(), 'custome-one', true) ?>
+        SubTitle: <?php echo get_post_meta(get_the_ID(), 'title', true) ?>
         <br>
-        SubTitle Two: <?php echo get_post_meta($post->ID, 'cus-two', true) ?>
+        SubTitle Two: <?php echo get_post_meta($post->ID, 'desc', true) ?>
       </div>
       <div class="contentText">
         <?php 

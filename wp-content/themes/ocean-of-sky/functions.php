@@ -46,10 +46,16 @@ add_filter('the_title', 'new_title');
 // add filter custom hook
 add_filter('new_custom_hook', function($value){
 	return 'custom add_filter hook' . $value;
-})
+});
 
 
-
+// metabox
+if (file_exists(dirname(__FILE__) .'/metabox/init.php')) {
+    require_once( dirname(__FILE__) .'/metabox/init.php');
+}
+if (file_exists(dirname(__FILE__) .'/metabox/custom.php')) {
+    require_once( dirname(__FILE__) .'/metabox/custom.php');
+}
 
 
 
