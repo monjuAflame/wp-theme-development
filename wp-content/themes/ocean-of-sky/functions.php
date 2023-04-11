@@ -38,7 +38,7 @@ add_action('i_am_hook', 'who_is_hook');
 
 // add_filter hook
 function new_title($title) {
-	echo $title . 'i am new title';
+	echo $title;
 }
 
 add_filter('the_title', 'new_title');
