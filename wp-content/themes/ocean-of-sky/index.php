@@ -5,7 +5,7 @@
 
 <?php wp_head() ?>
 </head>
-<body>
+<body <?php body_class()?>>
 <div id="page">
   <div class="topNaviagationLink"><a href="#">Home</a></div>
   <div class="topNaviagationLink"><a href="#">About</a></div>
