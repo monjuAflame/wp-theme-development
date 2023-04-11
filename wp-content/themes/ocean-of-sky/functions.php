@@ -28,7 +28,7 @@ function basic_theme_styles() {
 require_once('custom-menu-walker.php');
 
 
-
+// add_action hook - custom
 
 function who_is_hook() {
 	echo 'i am function';
@@ -36,12 +36,14 @@ function who_is_hook() {
 
 add_action('i_am_hook', 'who_is_hook');
 
-
+// add_filter hook
 function new_title($title) {
 	echo $title . 'i am new title';
 }
 
 add_filter('the_title', 'new_title');
+
+// add filter custom hook
 
 
 

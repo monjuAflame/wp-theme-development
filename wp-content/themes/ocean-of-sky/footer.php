@@ -4,6 +4,10 @@ wp_footer();
 
 do_action('i_am_hook');
 
+$var = ' kisu hove';
+echo apply_filters('new_custom_hook', $var); 
+
+
 ?>
 
 </body>
