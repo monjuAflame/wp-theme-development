@@ -4,7 +4,7 @@ add_action('cmb2_admin_init', 'custom_metaboxes');
 
 function custom_metaboxes(){
     $cmb = new_cmb2_box(array(
-        'object_types' => array('post', 'page'),
+        'object_types' => array('post'),
         'title' => 'Aditional Data',
         'id' => 'aditional',
     ));
