@@ -4,8 +4,12 @@ get_header();
 ?>
 <div class="contentBox">
   <div class="innerBox">
-    404 - page not found
-    <?php get_search_form() ?>
+    <h2>404 - page not found</h2>
+    <p>
+      <form action="<?php echo home_url() ?>" method="GET">
+        <input type="text" name="s" placeholder="s">
+    </form>
+    </p>
 </div>
 </div>
 <?php get_footer() ?>
