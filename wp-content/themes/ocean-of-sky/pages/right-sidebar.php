@@ -40,7 +40,9 @@ get_header();
 
         <!-- right side -->
         <div class="rightside">
-            right sidebar
+            <?php 
+                dynamic_sidebar('right-sidebar');
+            ?>
         </div>
         <!-- right side end -->
     </div>

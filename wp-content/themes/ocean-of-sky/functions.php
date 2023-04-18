@@ -72,5 +72,30 @@ if (file_exists(dirname(__FILE__) .'/metabox/custom.php')) {
 }
 
 
+add_action('widgets_init', 'widget_register');
 
-?>
+function widget_register(){
+    register_sidebar(array(
+        'name' => 'Right sidebar',
+        'description' => 'this is right sidebar',
+        'id' => 'right-sidebar',
+        'before_widget' => '<div class="widget_design">',
+        'after_widget' => '</div>',
+        'before_title'   => '<h2 class="widgettitle">',
+        'after_title'    => "</h2>",
+        'before_sidebar'=> '<div class="right">',
+        'after_sidebar'=> '</div>'
+    ));
+    register_sidebar(array(
+        'name' => 'Left sidebar',
+        'description' => 'this is right sidebar',
+        'id' => 'left-sidebar',
+        'before_widget' => '<div class="widget_design">',
+        'after_widget' => '</div>',
+        'before_title'   => '<h2 class="widgettitle">',
+        'after_title'    => "</h2>",
+        'before_sidebar'=> '<div class="right">',
+        'after_sidebar'=> '</div>'
+    ));
+    
+}

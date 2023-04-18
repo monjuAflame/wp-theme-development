@@ -21,8 +21,10 @@ get_header();
 
     <div style="width: 100%; display: flex;">
         <!-- right side -->
-            <div class="rightside">
-            left sidebar
+        <div class="left-sidebar">
+             <?php 
+                dynamic_sidebar('left-sidebar');
+            ?>
         </div>
         <!-- right side end -->
         <!-- content -->
