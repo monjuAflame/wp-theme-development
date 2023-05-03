@@ -99,3 +99,11 @@ function widget_register(){
     ));
     
 }
+
+// shortcode
+
+add_shortcode('shortcode', 'shortcode_function');
+
+function shortcode_function(){
+    echo "<h1> This is shortcode registration </h1>";
+}
