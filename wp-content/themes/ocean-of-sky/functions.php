@@ -119,11 +119,30 @@ function shortcode_function($attributes, $content){
 add_shortcode( 'box', 'box');
 
 function box($attr, $content){
-    echo '<div class="box"> '.do_shortcode( $content ).' </div>';
+    return '<div class="box"> '.do_shortcode( $content ).' </div>';
 }
 
 add_shortcode( 'text', 'text' );
 
 function text($attr, $content){
-    echo '<p>'.do_shortcode( $content ).'</p>';
+    return '<p>'.do_shortcode( $content ).'</p>';
+}
+
+add_filter('widget_text', 'do_shortcode');
+
+
+add_shortcode( 'testimonials', 'testimonials_shortcode' );
+
+function testimonials_shortcode(){
+    
+    $testimonials = new WP_Query(array(
+        'post_type' => 'basic-testimonials'
+    ));
+    
+    while ($testimonials->have_posts()) : $testimonials->the_post(); ?>
+
+       <h2><?php the_title(); ?></h2>
+       
+    <?php endwhile; 
+    
 }
