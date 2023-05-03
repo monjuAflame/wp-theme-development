@@ -107,8 +107,11 @@ add_shortcode('shortcode', 'shortcode_function');
 function shortcode_function($attributes, $content){
 
     $attr = shortcode_atts(array(
-        'alignment' => "left"
+        'alignment' => "left",
+        'color' => "red",
     ), $attributes);
 
-    echo "<h1 style='text-align: ".$attr['alignment']."'> ". $content ." </h1>";
+    extract($attr);
+
+    echo "<h1 style='text-align: ".$alignment."; color:".$color.";'> ". $content ." </h1>";
 }
