@@ -113,5 +113,5 @@ function shortcode_function($attributes, $content){
 
     extract($attr);
 
-    echo "<h1 style='text-align: ".$alignment."; color:".$color.";'> ". $content ." </h1>";
+    printf("<h1 style='text-align: %s ; color: %s ;'> %s </h1>", $alignment, $color, $content);
 }
