@@ -105,5 +105,10 @@ function widget_register(){
 add_shortcode('shortcode', 'shortcode_function');
 
 function shortcode_function($attributes, $content){
-    echo "<h1> ". $content ." </h1>";
+
+    $attr = shortcode_atts(array(
+        'alignment' => "left"
+    ), $attributes);
+
+    echo "<h1 style='text-align: ".$attr['alignment']."'> ". $content ." </h1>";
 }
