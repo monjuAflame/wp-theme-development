@@ -115,3 +115,15 @@ function shortcode_function($attributes, $content){
 
     printf("<h1 style='text-align: %s ; color: %s ;'> %s </h1>", $alignment, $color, $content);
 }
+
+add_shortcode( 'box', 'box');
+
+function box($attr, $content){
+    echo '<div class="box"> '.do_shortcode( $content ).' </div>';
+}
+
+add_shortcode( 'text', 'text' );
+
+function text($attr, $content){
+    echo '<p>'.do_shortcode( $content ).'</p>';
+}
