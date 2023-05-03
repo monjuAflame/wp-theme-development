@@ -104,6 +104,6 @@ function widget_register(){
 
 add_shortcode('shortcode', 'shortcode_function');
 
-function shortcode_function(){
-    echo "<h1> This is shortcode registration </h1>";
+function shortcode_function($attributes, $content){
+    echo "<h1> ". $content ." </h1>";
 }
