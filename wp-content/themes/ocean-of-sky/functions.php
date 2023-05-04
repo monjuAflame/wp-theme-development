@@ -171,3 +171,5 @@ vc_map(array(
         )
     )
 ));
+
+vc_remove_element( "vc_message" );
