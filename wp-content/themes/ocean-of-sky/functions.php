@@ -134,7 +134,9 @@ add_filter('widget_text', 'do_shortcode');
 add_shortcode( 'testimonials', 'testimonials_shortcode' );
 
 function testimonials_shortcode(){
-    
+
+    ob_start();
+
     $testimonials = new WP_Query(array(
         'post_type' => 'basic-testimonials'
     ));
@@ -145,4 +147,5 @@ function testimonials_shortcode(){
        
     <?php endwhile; 
     
+    return ob_get_clean();
 }
