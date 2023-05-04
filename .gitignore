@@ -1,0 +1,7 @@
+/node_modules
+
+/.idea
+/.vscode
+
+/wp-content/plugins
+/wp-content/uploads

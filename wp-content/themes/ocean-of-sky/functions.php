@@ -149,3 +149,10 @@ function testimonials_shortcode(){
     
     return ob_get_clean();
 }
+
+vc_map(array(
+    'name' => 'new testimonials',
+    'base' => 'testimonials',
+    'show_settings_on_create' => true,
+    'icon' => get_template_directory_uri() . "/icon/element-icon-button.svg",
+));
