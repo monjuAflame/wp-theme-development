@@ -155,5 +155,19 @@ vc_map(array(
     'base' => 'testimonials',
     'show_settings_on_create' => true,
     'icon' => get_template_directory_uri() . "/icon/element-icon-button.svg",
-    'category' => 'Custom'
+    'category' => 'Custom',
+    'params' => array(
+        array(
+            'param_name' => 'title',
+            'type' => 'textfield',
+            'heading' => 'Title',
+            'value' => 'Title Here..'
+        ),
+        array(
+            'param_name' => 'content',
+            'type' => 'textarea_html',
+            'heading' => 'Content',
+            'value' => 'Content Here..'
+        )
+    )
 ));
