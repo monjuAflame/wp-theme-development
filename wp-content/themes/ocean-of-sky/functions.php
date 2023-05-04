@@ -155,4 +155,5 @@ vc_map(array(
     'base' => 'testimonials',
     'show_settings_on_create' => true,
     'icon' => get_template_directory_uri() . "/icon/element-icon-button.svg",
+    'category' => 'Custom'
 ));
